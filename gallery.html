@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <script src="https://kit.fontawesome.com/c408451660.js" crossorigin="anonymous"></script> 
+    
+    <title>Dipps beautifyers</title>
+</head>
+<body>
+        <div class="container">
+            <nav>
+                <img src="images/dipps-bg.png" class="logo">
+                <ul id="side-menu">
+                    <li>
+                        <li><a href="index.html">Home</a></li>
+                        
+                        <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+           <div class="gallery-container">
+              <div class="gallery">
+                <a href="images/intro-img.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="images/intro-img.jpg">
+
+                </a>
+                <a href="images/intro-img.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="images/intro-img.jpg">
+
+                </a>
+                <a href="images/intro-img.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="images/intro-img.jpg">
+                </a>
+                <a href="images/intro-img.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="images/intro-img.jpg">
+                </a>
+                <a href="images/intro-img.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="images/intro-img.jpg">
+                </a>
+                <a href="images/intro-img.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="images/intro-img.jpg">
+                </a>
+                <a href="images/intro-img.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="images/intro-img.jpg">
+                </a>
+                <a href="images/intro-img.jpg" data-lightbox="models" data-title="caption1">
+                    <img src="images/intro-img.jpg">
+                </a>
+                
+              </div>
+           </div>
+        </div>
+
+
+
+
+
+
+
+       <script>
+                
+        var sideMenu = document.getElementById ("side-menu");
+
+        function openmenu(){
+            sideMenu.style.right="0";
+        }
+        function closemenu(){
+            sideMenu.style.right="-200px";
+        }
+    </script>
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
