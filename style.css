@@ -102,6 +102,7 @@ nav ul li a:hover::after{
 
 .intro-col-1 img{
     width: 100%;
+    border-radius: 5px;
    
 }
 
@@ -141,10 +142,12 @@ nav ul li a:hover::after{
     margin-top: 80px;
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 50px;
 }
 
 .services img{
     width: 100%;
+    border-radius: 5px;
 }
 
 .services h2{
@@ -179,11 +182,15 @@ font-size: 50px;
     font-size: 24px;
 }
 
+
+/* ABOUT US section */
+
 #about-us{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 100px;
+    padding-top: 50px;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -267,6 +274,7 @@ font-size: 50px;
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 100px;
+    padding-top: 50px;
 }
 
 
@@ -446,7 +454,11 @@ nav .fa-solid{
     .intro{
         padding-left: 0px;
         padding-right: 0px;
-        margin-top: 0;
+        margin-top: 25px;
+    }
+    .intro-col-1{
+        display: flex;
+        justify-content: center;
     }
 
     .intro-col-2{
@@ -464,7 +476,8 @@ nav .fa-solid{
      }
 
      .intro-col-1 img{
-        width: 100%;
+        width: 60%;
+        height: auto;
     }
 
     /* services media queries */
@@ -562,6 +575,17 @@ nav .fa-solid{
         }
         footer p{
             margin-bottom: 10px;
+        }
+
+
+
+
+        /* gallery media queries */
+
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
         }
 
 }
